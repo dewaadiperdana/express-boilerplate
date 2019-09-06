@@ -12,11 +12,11 @@
     "build": "babel src -d dist"
   },
   "_moduleAliases": {
-    "@root" : "./src",
-    "@controllers" : "src/controllers",
-    "@services" : "src/services",
+    "@root": "./src",
+    "@controllers": "src/controllers",
+    "@services": "src/services",
     "@helpers": "src/helpers",
-    "@models": "src/models",
+    "@models": "src/database/models",
     "@middlewares": "src/middlewares",
     "@validators": "src/middlewares/validators",
     "@routes": "src/routes"
@@ -36,6 +36,9 @@
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
     "nodemon": "^1.19.2"
   }
 }
