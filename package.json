@@ -7,9 +7,10 @@
   "license": "MIT",
   "scripts": {
     "sequelize": "./node_modules/.bin/sequelize",
-    "start:dev": "./node_modules/.bin/nodemon src/app.js --exec babel-node",
-    "start": "node dist/app.js",
-    "build": "babel src -d dist"
+    "start:dev": "./node_modules/.bin/nodemon src/app --exec babel-node",
+    "start": "node dist/app",
+    "build": "babel src -d dist",
+    "key:generate": "node ./src/scripts/secretkey"
   },
   "_moduleAliases": {
     "@root": "./src",

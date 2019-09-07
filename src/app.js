@@ -16,4 +16,4 @@ app.use(bodyParser.json());
 // ROUTES SETUP
 app.use('/', indexRoutes);
 
-app.listen(port, () => console.log(`Server running at port: ${port}`));
+app.listen(port, () => console.log(`Server running at : http://localhost:${port}`));
