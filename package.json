@@ -8,26 +8,17 @@
   "scripts": {
     "sequelize": "./node_modules/.bin/sequelize",
     "start:dev": "./node_modules/.bin/nodemon src/app --exec babel-node",
-    "start": "node dist/app",
-    "build": "babel src -d dist",
+    "start": "node build/app",
+    "build": "babel src -d build",
+    "test": "mocha --require @babel/register ./tests/**/*.spec.js --exit",
     "key:generate": "node ./src/scripts/secretkey"
-  },
-  "_moduleAliases": {
-    "@root": "./src",
-    "@controllers": "src/controllers",
-    "@services": "src/services",
-    "@helpers": "src/helpers",
-    "@models": "src/database/models",
-    "@middlewares": "src/middlewares",
-    "@validators": "src/middlewares/validators",
-    "@routes": "src/routes"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "express-validator": "^6.2.0",
-    "module-alias": "^2.2.1",
+    "lodash": "^4.17.15",
     "mysql2": "^1.7.0",
     "sequelize": "^5.18.1",
     "sequelize-cli": "^5.5.1"
@@ -37,9 +28,17 @@
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.7.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "eslint": "^6.3.0",
     "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-import-resolver-babel-module": "^5.1.0",
     "eslint-plugin-import": "^2.18.2",
-    "nodemon": "^1.19.2"
+    "mocha": "^6.2.2",
+    "nodemon": "^1.19.2",
+    "prettier": "^1.19.1"
   }
 }
