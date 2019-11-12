@@ -12,9 +12,9 @@
 
 ***
 
-# Instalation
+# Installation
 Just simply clone this repository by running `git clone https://github.com/dewaadiperdana/express-boilerplate.git`.
-Then after finish cd into `cd express-boilerplate` and run `npm install` or `yarn install`.
+Then after finish cd into `your/project/folder` and run `npm install` or `yarn install`.
 
 ***
 
